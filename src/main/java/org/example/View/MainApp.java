@@ -4,6 +4,7 @@ import org.example.Model.Employee;
 import org.example.Service.EmployeeManager;
 
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MainApp {
@@ -19,7 +20,13 @@ public class MainApp {
             System.out.println("0. Exit");
             System.out.println("Enter your choice: ");
 
-            int choice = scanner.nextInt();
+            int choice;
+            try { choice = Integer.parseInt(String.valueOf(scanner.nextInt())); }
+            catch (NumberFormatException e) {
+                System.out.println("Invalid input please enter a valid option");
+                continue;
+            }
+
             scanner.nextLine();
 
             switch (choice) {
@@ -52,17 +59,60 @@ public class MainApp {
     private static Employee createEmployeeFromUserInput(Scanner scanner) {
         Employee employee = new Employee();
         System.out.print("Enter Employee ID: ");
-        employee.setEmployeeID(scanner.nextInt());
-        scanner.nextLine();
-        System.out.print("Enter First Name: ");
-        employee.setFirstName(scanner.nextLine());
-        System.out.print("Enter Last Name: ");
-        employee.setLastName(scanner.nextLine());
-        System.out.print("Enter salary: ");
-        employee.setSalary(scanner.nextDouble());
-        return employee;
-    }
+        while (true) {
+            try {
+                employee.setEmployeeID(scanner.nextInt());
+                scanner.nextLine();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input. Please enter a valid EmployeeID: ");
+                scanner.next();
+            }
+        }
 
+                System.out.print("Enter First Name: ");
+                while(true) {
+                    try {
+                        String FirstName = scanner.nextLine();
+                        if (!isValidString(FirstName)) {
+                            throw new InputMismatchException();
+                        }
+                        employee.setFirstName(FirstName);
+                        break;
+                    } catch (InputMismatchException e) {
+                        System.out.println("Invalid input. Please enter a valid First Name: ");
+                    }
+                }
+                System.out.print("Enter Last Name: ");
+                while(true) {try {
+                    String LastName = scanner.nextLine();
+                    if (!isValidString(LastName)) {throw new InputMismatchException();
+                    }
+                    employee.setLastName(LastName);
+                    break;
+                } catch (InputMismatchException e) {
+                    System.out.println("Invalid input. Please enter a valid Last Name: ");
+                     }
+                }
+               // employee.setLastName(scanner.nextLine());
+                System.out.print("Enter salary: ");
+                while (true) {
+                    try {
+                        employee.setSalary(scanner.nextDouble());
+                        scanner.nextLine();
+                        break;
+                    } catch
+                    (InputMismatchException e) {
+                        System.out.println("Invalid input. Please enter a valid Salary ");
+                        scanner.next();
+                    }
+                }
+                return employee;
+            }
+       private static boolean isValidString(String input) {
+ //String input = scanner.nextLine();
+ return input.matches("[a-zA-Z]+");
+}
     private static void updateEmployee(EmployeeManager employeeManager, Scanner scanner) {
         System.out.print("Enter the employee ID to update: ");
         int employeeID = scanner.nextInt();

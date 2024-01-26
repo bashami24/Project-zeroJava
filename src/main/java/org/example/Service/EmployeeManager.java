@@ -12,18 +12,18 @@ public class EmployeeManager {
 
     public EmployeeManager() {
 
-            this.employees = new ArrayList<>();
-        }
+        this.employees = new ArrayList<>();
+    }
 
-        public void addEmployee(Employee employee){
-            employees.add(employee);
-        }
-        public List<Employee> getEmployees () {
-            return new ArrayList<>(employees);
-        }
-        public void updateEmployee ( int employeeId, Employee updatedEmployee){
-            for (int i = 0; i < employees.size(); i++) {
-                if (employees.get(i).getEmployeeID() == employeeId) {
+    public void addEmployee(Employee employee){
+        employees.add(employee);
+    }
+    public List<Employee> getEmployees () {
+        return new ArrayList<>(employees);
+    }
+    public void updateEmployee ( int employeeId, Employee updatedEmployee){
+        for (int i = 0; i < employees.size(); i++) {
+            if (employees.get(i).getEmployeeID() == employeeId) {
                 employees.set(i, updatedEmployee);
                 return;
             }
