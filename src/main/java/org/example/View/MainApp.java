@@ -2,12 +2,12 @@ package org.example.View;
 
 import org.example.Model.Employee;
 import org.example.Service.EmployeeManager;
-
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 public class MainApp {
+    private static final Logger logger = LoggerFactory.getLogger(MainApp.class);
     public static void main(String[] args) {
         EmployeeManager employeeManager = new EmployeeManager();
         Scanner scanner = new Scanner(System.in);
@@ -57,6 +57,7 @@ public class MainApp {
     }
 
     private static Employee createEmployeeFromUserInput(Scanner scanner) {
+        logger.info("Creating a new employee from user input...");
         Employee employee = new Employee();
         System.out.print("Enter Employee ID: ");
         while (true) {
@@ -103,10 +104,12 @@ public class MainApp {
                         break;
                     } catch
                     (InputMismatchException e) {
-                        System.out.println("Invalid input. Please enter a valid Salary ");
+                        //logger.info("Invalid input. Please enter a valid Salary ");
+                  System.out.println("Invalid input. Please enter a valid Salary ");
                         scanner.next();
                     }
                 }
+                logger.info("Employee created successfully");
                 return employee;
             }
        private static boolean isValidString(String input) {
@@ -114,6 +117,7 @@ public class MainApp {
  return input.matches("[a-zA-Z]+");
 }
     private static void updateEmployee(EmployeeManager employeeManager, Scanner scanner) {
+        logger.info("Updating Employee...");
         System.out.print("Enter the employee ID to update: ");
         int employeeID = scanner.nextInt();
         scanner.nextLine();
