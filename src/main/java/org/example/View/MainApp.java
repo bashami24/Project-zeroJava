@@ -4,6 +4,8 @@ import org.example.Model.Employee;
 import org.example.Service.EmployeeManager;
 import java.util.InputMismatchException;
 import org.example.Exception.InvalidInputException;
+
+import java.util.List;
 import java.util.Scanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +20,7 @@ public class MainApp {
             System.out.println("2. View Employees");
             System.out.println("3. Update Employee");
             System.out.println("4. Delete Employee");
+            System.out.println("5. Search for Employee");
             System.out.println("0. Exit");
             System.out.println("Enter your choice: ");
 
@@ -47,6 +50,23 @@ public class MainApp {
                     break;
                 case 4:
                     deleteEmployee(employeeManager, scanner);
+                    break;
+                case 5:
+                    System.out.println("Enter the salary to search: ");
+                    double targetsalary = scanner.nextDouble();
+                    scanner.nextLine();
+                    List<Employee> employeeWithSalary = EmployeeManager.GetEmployeeBySalary(targetsalary);
+                    if (employeeWithSalary.isEmpty()) {
+                        System.out.println("No employee found with the specified Salary. ");
+                    }
+                    else {
+                        System.out.println("Employees with the specified salary: ");
+                        for (Employee employee : employeeWithSalary) {
+                            System.out.println(employee);
+                        }
+
+
+                    }
                     break;
                 case 0:
                     System.out.println("Exiting the application GoodBye!");

@@ -118,3 +118,62 @@ INFO	2024-01-28 21:14:18,287	0	org.example.View.MainApp	[main]	Creating a new em
 INFO	2024-01-28 21:14:45,964	27677	org.example.View.MainApp	[main]	Employee created successfully
 INFO	2024-01-28 21:14:59,854	41567	org.example.View.MainApp	[main]	Deleting Employee...
 INFO	2024-01-28 21:15:02,925	44638	org.example.View.MainApp	[main]	Employee deleted Successfully
+INFO	2024-01-28 21:20:25,530	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-28 21:20:43,492	17962	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-28 21:20:53,612	28082	org.example.View.MainApp	[main]	Updating Employee...
+INFO	2024-01-28 21:20:59,739	34209	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-28 21:21:27,630	62100	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-28 21:21:27,630	62100	org.example.View.MainApp	[main]	Employee Updated Successfully
+INFO	2024-01-28 21:23:14,408	168878	org.example.View.MainApp	[main]	Creating a new employee from user input...
+ERROR	2024-01-28 21:23:18,265	172735	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at org.example.View.MainApp.createEmployeeFromUserInput(MainApp.java:66)
+	at org.example.View.MainApp.main(MainApp.java:35)
+ERROR	2024-01-28 21:24:28,601	243071	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at org.example.View.MainApp.createEmployeeFromUserInput(MainApp.java:81)
+	at org.example.View.MainApp.main(MainApp.java:35)
+ERROR	2024-01-28 21:24:46,789	261259	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at org.example.View.MainApp.createEmployeeFromUserInput(MainApp.java:106)
+	at org.example.View.MainApp.main(MainApp.java:35)
+INFO	2024-01-28 21:25:17,479	291949	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 09:19:43,713	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 09:19:56,304	12591	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 09:19:59,462	15749	org.example.View.MainApp	[main]	Creating a new employee from user input...
+ERROR	2024-01-29 09:20:09,702	25989	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at org.example.View.MainApp.createEmployeeFromUserInput(MainApp.java:106)
+	at org.example.View.MainApp.main(MainApp.java:35)
+INFO	2024-01-29 09:20:15,525	31812	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 09:49:31,564	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 09:49:41,292	9728	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 10:50:54,360	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+ERROR	2024-01-29 10:51:06,152	11792	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at org.example.View.MainApp.createEmployeeFromUserInput(MainApp.java:66)
+	at org.example.View.MainApp.main(MainApp.java:35)
+INFO	2024-01-29 10:51:23,446	29086	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 10:51:25,961	31601	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 10:51:36,902	42542	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 10:51:52,876	58516	org.example.View.MainApp	[main]	Updating Employee...
+INFO	2024-01-29 11:46:29,918	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 11:46:39,780	9862	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 11:46:43,401	13483	org.example.View.MainApp	[main]	Updating Employee...
+INFO	2024-01-29 11:46:44,844	14926	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 11:46:59,083	29165	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 11:46:59,083	29165	org.example.View.MainApp	[main]	Employee Updated Successfully

@@ -31,7 +31,9 @@ public Employee () {
     public void setSalary(double salary) {
         Salary = salary;
     }
-
+public double getSalary() {
+    return Salary;
+}
     public int getEmployeeID(){
         return employeeID;
     }

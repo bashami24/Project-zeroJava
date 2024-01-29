@@ -10,13 +10,13 @@ Project Structure
 View Package: Contains the main application class responsible for user interaction.
 Model Package: Holds the employee class defining the structure of an employee and its method
 Service Packages: Contains the EmployeeManager class handling the management of employee records.
-Exception packages : contains Exception classes that handle
+Exception packages : contains Exception classes that handle exceptions
 
 How To Use
 
-1. Run the main app class to start the application
-2.Follow the on screen prompts to choose from various options
-3. Input employee details as guided by the application
+1.Run the main app class to start the application
+2.Follow the on-screen prompts to choose from various options
+3.Input employee details as guided by the application
 
 Dependencies
 
