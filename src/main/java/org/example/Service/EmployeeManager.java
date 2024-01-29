@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+
+
+
 public class EmployeeManager {
     private static List<Employee> employees;
 
@@ -14,13 +17,20 @@ public class EmployeeManager {
 
         this.employees = new ArrayList<>();
     }
+    /*
+    The system allows to add new employees by providing details such as employeeId,First name last name etc
 
+     */
     public void addEmployee(Employee employee){
         employees.add(employee);
     }
     public List<Employee> getEmployees () {
         return new ArrayList<>(employees);
     }
+
+    /*
+    The application supports updating Employee's details including modifying ID number, first or last name
+     */
     public void updateEmployee ( int employeeId, Employee updatedEmployee){
         for (int i = 0; i < employees.size(); i++) {
             if (employees.get(i).getEmployeeID() == employeeId) {
@@ -30,7 +40,10 @@ public class EmployeeManager {
         }
         throw new IllegalArgumentException("Employee not found update");
     }
-
+    /*
+       Users can also remove employees from the system by providing their employee ID. The system ensures that
+       the provided ID is valid and corresponds to an existing employee before executing the deletion.
+        */
     public static void deleteEmployee(int employeeId) {
         Iterator<Employee> iterator = employees.iterator();
         while (iterator.hasNext()) {
