@@ -177,3 +177,128 @@ INFO	2024-01-29 11:46:43,401	13483	org.example.View.MainApp	[main]	Updating Empl
 INFO	2024-01-29 11:46:44,844	14926	org.example.View.MainApp	[main]	Creating a new employee from user input...
 INFO	2024-01-29 11:46:59,083	29165	org.example.View.MainApp	[main]	Employee created successfully
 INFO	2024-01-29 11:46:59,083	29165	org.example.View.MainApp	[main]	Employee Updated Successfully
+INFO	2024-01-29 15:23:27,282	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 15:23:38,224	10942	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 15:35:55,700	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 15:36:05,525	9825	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 15:36:07,923	12223	org.example.View.MainApp	[main]	Updating Employee...
+ERROR	2024-01-29 15:36:12,062	16362	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at org.example.View.MainApp.updateEmployee(MainApp.java:147)
+	at org.example.View.MainApp.main(MainApp.java:49)
+INFO	2024-01-29 15:39:02,297	186597	org.example.View.MainApp	[main]	Deleting Employee...
+INFO	2024-01-29 15:41:53,806	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 15:42:08,569	14763	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 15:42:14,372	20566	org.example.View.MainApp	[main]	Updating Employee...
+INFO	2024-01-29 15:42:17,137	23331	org.example.View.MainApp	[main]	Creating a new employee from user input...
+ERROR	2024-01-29 15:42:21,320	27514	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at org.example.View.MainApp.createEmployeeFromUserInput(MainApp.java:86)
+	at org.example.View.MainApp.updateEmployee(MainApp.java:154)
+	at org.example.View.MainApp.main(MainApp.java:49)
+INFO	2024-01-29 15:42:36,295	42489	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 15:42:36,295	42489	org.example.View.MainApp	[main]	Employee Updated Successfully
+INFO	2024-01-29 16:02:43,956	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 16:03:35,796	51840	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 16:03:39,454	55498	org.example.View.MainApp	[main]	Updating Employee...
+ERROR	2024-01-29 16:03:43,693	59737	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at org.example.View.MainApp.updateEmployee(MainApp.java:149)
+	at org.example.View.MainApp.main(MainApp.java:49)
+INFO	2024-01-29 16:04:52,829	128873	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 16:05:10,557	146601	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 16:05:10,558	146602	org.example.View.MainApp	[main]	Employee Updated Successfully
+INFO	2024-01-29 16:05:13,825	149869	org.example.View.MainApp	[main]	Deleting Employee...
+ERROR	2024-01-29 16:05:18,865	154909	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 1
+ERROR	2024-01-29 16:08:52,148	368192	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 1
+ERROR	2024-01-29 16:08:59,194	375238	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 2
+INFO	2024-01-29 16:15:14,810	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 16:15:24,062	9252	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 16:15:28,761	13951	org.example.View.MainApp	[main]	Deleting Employee...
+ERROR	2024-01-29 16:15:32,469	17659	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 7
+ERROR	2024-01-29 16:15:43,062	28252	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 3
+ERROR	2024-01-29 16:15:47,846	33036	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 6
+ERROR	2024-01-29 16:15:50,607	35797	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 6
+INFO	2024-01-29 16:17:41,194	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 16:17:51,332	10138	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 16:17:53,591	12397	org.example.View.MainApp	[main]	Deleting Employee...
+ERROR	2024-01-29 16:17:56,432	15238	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 4
+ERROR	2024-01-29 16:18:28,154	46960	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 5
+ERROR	2024-01-29 16:18:29,803	48609	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 6
+ERROR	2024-01-29 16:18:31,092	49898	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 7
+ERROR	2024-01-29 16:18:32,777	51583	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 8
+INFO	2024-01-29 16:19:26,337	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 16:19:34,011	7674	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 16:19:38,196	11859	org.example.View.MainApp	[main]	Deleting Employee...
+ERROR	2024-01-29 16:19:40,060	13723	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 4
+INFO	2024-01-29 16:20:49,859	83522	org.example.View.MainApp	[main]	Deleting Employee...
+INFO	2024-01-29 16:20:51,193	84856	org.example.View.MainApp	[main]	Employee deleted Successfully
+INFO	2024-01-29 16:25:14,526	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 16:25:23,833	9307	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 16:25:42,806	28280	org.example.View.MainApp	[main]	Deleting Employee...
+ERROR	2024-01-29 16:25:45,093	30567	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 6
+INFO	2024-01-29 16:31:19,070	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 16:31:30,773	11703	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 16:31:33,186	14116	org.example.View.MainApp	[main]	Deleting Employee...
+ERROR	2024-01-29 16:31:35,743	16673	org.example.View.MainApp	[main]	Employee not found for deletion. Invalid ID: 4
+INFO	2024-01-29 16:35:30,683	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 16:35:38,544	7861	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 16:35:40,799	10116	org.example.View.MainApp	[main]	Updating Employee...
+ERROR	2024-01-29 16:35:45,235	14552	org.example.View.MainApp	[main]	Employee not found for update .Invalid ID : 3
+INFO	2024-01-29 16:37:08,328	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+ERROR	2024-01-29 16:37:10,349	2021	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at org.example.View.MainApp.createEmployeeFromUserInput(MainApp.java:86)
+	at org.example.View.MainApp.main(MainApp.java:38)
+ERROR	2024-01-29 16:37:12,021	3693	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at org.example.View.MainApp.createEmployeeFromUserInput(MainApp.java:86)
+	at org.example.View.MainApp.main(MainApp.java:38)
+INFO	2024-01-29 16:37:27,633	19305	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 16:37:31,809	23481	org.example.View.MainApp	[main]	Updating Employee...
+ERROR	2024-01-29 16:37:35,060	26732	org.example.View.MainApp	[main]	Employee not found for update .Invalid ID : 8
+INFO	2024-01-29 16:39:31,027	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 16:39:39,547	8520	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 16:39:43,477	12450	org.example.View.MainApp	[main]	Updating Employee...
+ERROR	2024-01-29 16:39:46,155	15128	org.example.View.MainApp	[main]	Employee not found for update .Invalid ID : 5
+INFO	2024-01-29 16:40:26,947	0	org.example.View.MainApp	[main]	Creating a new employee from user input...
+INFO	2024-01-29 16:40:37,776	10829	org.example.View.MainApp	[main]	Employee created successfully
+INFO	2024-01-29 16:40:39,667	12720	org.example.View.MainApp	[main]	Updating Employee...
+ERROR	2024-01-29 16:40:43,814	16867	org.example.View.MainApp	[main]	Employee not found for update .Invalid ID : 9
+ERROR	2024-01-29 16:40:50,043	23096	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at org.example.View.MainApp.updateEmployee(MainApp.java:149)
+	at org.example.View.MainApp.main(MainApp.java:49)
+ERROR	2024-01-29 16:40:56,850	29903	org.example.View.MainApp	[main]	Invalid input exception: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at org.example.View.MainApp.updateEmployee(MainApp.java:149)
+	at org.example.View.MainApp.main(MainApp.java:49)
+ERROR	2024-01-29 16:42:25,125	118178	org.example.View.MainApp	[main]	Employee not found for update .Invalid ID : 6

@@ -37,6 +37,10 @@ public double getSalary() {
     public int getEmployeeID(){
         return employeeID;
     }
+
+    public String getFirstName() { return FirstName; }
+
+    public String getLastName () { return LastName;}
     public String toString() {
         return "Employee{" +
                 "employeeID=" + employeeID +

@@ -140,49 +140,84 @@ public class MainApp {
  //String input = scanner.nextLine();
  return input.matches("[a-zA-Z]+");
 }
-    private static void updateEmployee(EmployeeManager employeeManager, Scanner scanner)  {
+    private static void updateEmployee(EmployeeManager employeeManager, Scanner scanner) {
         logger.info("Updating Employee...");
-        try { System.out.print("Enter the employee ID to update: ");
-        int employeeID = scanner.nextInt();
-        scanner.nextLine();
+        boolean isUpdateSuccessful =  false;
+        while (!isUpdateSuccessful) {
+            try {
+                System.out.print("Enter the employee ID to update: ");
+                int employeeID = scanner.nextInt();
+                scanner.nextLine();
 
-            Employee exsitingEmployee = findEmployeeID(employeeManager, employeeID);
-            if (exsitingEmployee != null) {
-                Employee updatedEmployee = createEmployeeFromUserInput(scanner);
-                employeeManager.updateEmployee(employeeID, updatedEmployee);
-                logger.info("Employee Updated Successfully");
-            } else {
-                //throw new InputMismatchException ("Employee not found for update.");
-                System.out.println("Employee not found for update.");
+                if (employeeID == -1) {
+                    break;
+                }
+                Employee exsitingEmployee = findEmployeeID(employeeManager, employeeID);
+                if (exsitingEmployee != null) {
+                    Employee updatedEmployee = createEmployeeFromUserInput(scanner);
+                    employeeManager.updateEmployee(employeeID, updatedEmployee);
+                    logger.info("Employee Updated Successfully");
+                    isUpdateSuccessful = true;
+                } else {
+                    logger.error("Employee not found for update .Invalid ID : {}", employeeID);
+                    //throw new InputMismatchException ("Employee not found for update.");
+                    System.out.println("Employee not found for update or enter -1 to exit.");
+                    continue;
 
+                }
+                System.out.println("Press Enter to continue: ");
+                scanner.nextLine();
+
+            } catch (InputMismatchException e) {
+                logger.error("Invalid input exception: {}", e.getMessage(), e);
+                System.out.println("Invalid input. Please enter a valid ID: ");
+                scanner.next();
+            } catch (InvalidInputException e) {
+                logger.error("Invalid input exception: {}", e.getMessage(), e);
+                System.out.println("Invalid input. " + e.getMessage());
+                System.out.println("Press Enter to continue..");
+                scanner.nextDouble();
+                // throw new RuntimeException(e);
             }
-        }catch (InputMismatchException  e ){
-           // logger.error("Invalid input exception: {}",e.getMessage(),e);
-            System.out.println("Invalid input. Please enter a valid ID: ");
-        } catch (InvalidInputException e) {
-            throw new RuntimeException(e);
         }
     }
-
     private static void deleteEmployee(EmployeeManager employeeManager, Scanner scanner) {
         logger.info("Deleting Employee...");
-        System.out.println("Enter employee ID to delete: ");
-        int employeeID = scanner.nextInt();
-        scanner.nextLine();
-        try {
-            Employee exsitingEmployee = findEmployeeID(employeeManager, employeeID);
-            if (exsitingEmployee != null) {
-                EmployeeManager.deleteEmployee(employeeID);
-                logger.info("Employee deleted Successfully");
-                System.out.println("Employee deleted Successfully");
-            } else {
-                throw new InvalidInputException("Employee not found for deletion.");
-                //System.out.println("Employee not found for deletion.");
+        boolean isDeleteSuccessful =  false;
+        while (!isDeleteSuccessful) {
+            try {
 
+            System.out.println("Enter employee ID to delete: ");
+            int employeeID = scanner.nextInt();
+            scanner.nextLine();
+            if (employeeID == -1) {
+             break;
             }
-        }catch (InvalidInputException e ) {
-            logger.error ("Invalid Input exception:{}", e.getMessage(), e);
-            System.out.println("Invalid Input." + e.getMessage());
+
+                Employee exsitingEmployee = findEmployeeID(employeeManager, employeeID);
+                if (exsitingEmployee != null) {
+                    EmployeeManager.deleteEmployee(employeeID);
+                    logger.info("Employee deleted Successfully");
+                    System.out.println("Employee deleted Successfully");
+                    isDeleteSuccessful  = true;
+                } else {
+                    logger.error("Employee not found for deletion. Invalid ID: {}", employeeID);
+                    System.out.println("Employee not found for deletion. Please enter a valid ID or enter -1 to exit: ");
+                    continue;
+                }
+                System.out.println("Press Enter to continue: ");
+                scanner.nextLine();
+
+            } catch (InputMismatchException e) {
+                logger.error("Invalid input exception: {}", e.getMessage(), e);
+                System.out.println("Invalid input. Please enter a valid ID: ");
+                scanner.next();
+            } catch (InvalidInputException e) {
+              logger.error("Invalid input exception: {}", e.getMessage(), e);
+              System.out.println("Invalid input. " + e.getMessage());
+                System.out.println("Press Enter to continue..");
+                scanner.nextDouble();
+            }
         }
     }
     private static Employee findEmployeeID(EmployeeManager employeeManager, int employeeID) {
